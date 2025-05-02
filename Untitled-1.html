@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emergency Broadcast</title>
+  <style>
+    body {
+      background-color: black;
+      color: red;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .warning {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      animation: flicker 1s infinite alternate;
+    }
+
+    @keyframes flicker {
+      0% {opacity: 1;}
+      100% {opacity: 0.3;}
+    }
+
+    .message {
+      margin-top: 40px;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .broadcast {
+      border: 2px solid red;
+      padding: 20px;
+      margin-top: 30px;
+      background-color: #1a1a1a;
+      display: inline-block;
+      max-width: 600px;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: gray;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="warning">‼️ Emergency Alert ‼️</div>
+
+    <div class="broadcast">
+      <h2>⚠️ THIS IS A SYSTEM BROADCAST MESSAGE ⚠️</h2>
+      <p class="message">
+        This is a reminder from the **Poisonous Café**.<br>
+        All members are hereby warned: excessive toxicity will now be served with extra shots of sarcasm and a dash of betrayal. ☕<br><br>
+        Laugh responsibly. Cry silently. Magkita-kita tayo sa *chaos corner*.
+      </p>
+    </div>
+
+    <div class="footer">
+      ⏰ Reminder issued by: Poisonous Café<br>
+      "Serving you chaos since birth" 💀
+    </div>
+  </div>
+
+  <!-- Optional sound effect -->
+  <audio autoplay>
+    <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" type="audio/mpeg">
+    <!-- You can replace the audio link with a real Purge siren for full effect -->
+  </audio>
+</body>
+</html>
